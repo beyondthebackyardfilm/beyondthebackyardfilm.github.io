@@ -27,6 +27,14 @@
           &:nth-child(2), &:nth-child(4) {
             margin: 0 5rem;
           }
+          a {
+            color: white;
+            opacity: 0.8;
+            transition: 0.2s;
+            &:hover {
+              opacity: 1;
+            }
+          }
         }
       }
     }
@@ -58,16 +66,19 @@
   #section2 {
     height: 100vh;
     position: relative;
+    background: black;
+    z-index: 0;
     .top {
       background: url('https://s3.amazonaws.com/ijadams/btb/section-2-bg-top.jpg') no-repeat;
       background-size: cover;
       background-position: center;
-      height: 70%;
+      height: 65%;
       position: relative;
       display: flex;
       align-items: center;
       h1 {
         width: 40%;
+        z-index: 1;
         margin-left: 2rem;
         letter-spacing: 0.1rem;
         align-self: flex-end;
@@ -81,6 +92,10 @@
         span:nth-child(3) {margin-right:4rem}
         span:nth-child(4) {margin-right:6rem}
       }
+    }
+    .middle {
+      height: 5%;
+      background: transparent;
     }
     .bottom {
       background: black;
@@ -112,6 +127,7 @@
       display: flex;
       align-items: center;
       h1 {
+        z-index: 1;
         width: 40%;
         margin-bottom: -1rem;
         margin-left: 2rem;
@@ -182,6 +198,7 @@
       display: flex;
       align-items: center;
       h1 {
+        z-index: 1;
         width: 40%;
         margin-bottom: -1rem;
         margin-left: 2rem;
@@ -247,6 +264,7 @@
       display: flex;
       align-items: center;
       h1 {
+        z-index: 1;
         width: 40%;
         margin-bottom: -0.4rem;
         margin-left: 2rem;
@@ -350,20 +368,49 @@
   #section7 {
     height: 100vh;
     position: relative;
-    background: black;
+    background: url('https://s3.amazonaws.com/ijadams/btb/footer.jpg') no-repeat;
+    background-size: cover;
+    background-position: 50% 0%;
     .top {
+      color: #fff;
       height: 50%;
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
-      h1 {
+      .row {
         max-width: 50%;
         color: white;
-        font-size: 2.4rem;
+        text-align: center;
+        h1 {
+          font-size: 2.4rem;
+          letter-spacing: 1rem;
+          margin-bottom: 4rem;
+        }
+        h4 {
+          font-weight: 700;
+        }
+        p {
+          margin-bottom: 5rem;
+        }
+        table {
+          width: 50%;
+          margin: 0 25%;
+          td {
+            text-align: center;
+            font-size: 3rem;
+            padding: 0;
+            opacity: 0.8;
+            transition: 0.2s;
+            &:hover {
+              cursor: pointer;
+              opacity: 1;
+            }
+          }
+        }
       }
     }
     .bottom {
-      background: black;
       color: white;
       height: 50%;
       position: relative;
