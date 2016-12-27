@@ -1,0 +1,28 @@
+{
+  "name": "btb-jekyll-site",
+  "version": "0.0.1",
+  "description": "A static site for BTB film.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ian Adams",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.5.1",
+    "browser-sync": "^2.17.5",
+    "cssnano": "^3.8.0",
+    "csswring": "^5.1.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^2.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ijadams/btb-jekyll-site.git"
+  },
+  "keywords": ["jekyll","gulp","sass","postcss","browsersync","gulp gh-pages","GitHub Pages","autoprefixer","materialize","jquery"],
+  "homepage": "https://github.com/ijadams/btb-jekyll-site"
+}

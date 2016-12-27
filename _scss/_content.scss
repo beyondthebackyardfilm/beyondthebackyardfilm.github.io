@@ -1,0 +1,380 @@
+.site-wrapper {
+  #section1 {
+    background: url('https://s3.amazonaws.com/ijadams/btb/section1-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .nav {
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 1), transparent);
+      min-height: 150px;
+      ul {
+        margin-top: 2rem;
+        li {
+          display: inline-block;
+          font-family: 'derivia';
+          letter-spacing: 0.2rem;
+          &:nth-child(2), &:nth-child(4) {
+            margin: 0 5rem;
+          }
+        }
+      }
+    }
+    #logo {
+      align-self: flex-start;
+      img {
+        width: auto;
+        max-height: 80vh;
+      }
+    }
+    #watch-trailer {
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      color: white;
+      img {
+        max-width: 300px;
+        margin-bottom: 0.8rem;
+        transition: 0.2s ease-in;
+        opacity: 0.8;
+        &:hover {
+          cursor: pointer;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  #section2 {
+    height: 100vh;
+    position: relative;
+    .top {
+      background: url('https://s3.amazonaws.com/ijadams/btb/section-2-bg-top.jpg') no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 70%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      h1 {
+        width: 40%;
+        margin-left: 2rem;
+        letter-spacing: 0.1rem;
+        align-self: flex-end;
+        padding-bottom:5rem;
+        font-size: 6vw;
+        padding-bottom: 3rem;
+        line-height: 1em;
+        span {display: block;}
+        span:nth-child(1) {margin-right:0rem}
+        span:nth-child(2) {margin-right:2rem}
+        span:nth-child(3) {margin-right:4rem}
+        span:nth-child(4) {margin-right:6rem}
+      }
+    }
+    .bottom {
+      background: black;
+      color: white;
+      height: 30%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .container {
+        width: 100%;
+        p {
+          margin-top: 0;
+          padding: 0 10rem;
+        }
+      }
+    }
+  }
+
+  #section3 {
+    height: 100vh;
+    position: relative;
+    .top {
+      background: url('https://s3.amazonaws.com/ijadams/btb/section3-bg.jpg') no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 50%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      h1 {
+        width: 40%;
+        margin-bottom: -1rem;
+        margin-left: 2rem;
+        letter-spacing: 0.1rem;
+        align-self: flex-end;
+        font-size: 4.6vw;
+        line-height: 1em;
+        span {display: block;}
+        span:nth-child(1) {margin-right:8rem}
+        span:nth-child(2) {margin-right:6rem}
+        span:nth-child(3) {margin-right:4rem}
+        span:nth-child(4) {margin-right:2rem}
+        span:nth-child(5) {margin-right:4rem}
+        span:nth-child(6) {margin-right:6rem}
+
+      }
+    }
+    .bottom {
+      background: black;
+      color: white;
+      height: 50%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .l, .r  {
+        width: 50%;
+
+      }
+      .l {
+        padding-left: 12rem;
+        padding-right: 8rem;
+      }
+      .r {
+        padding-right: 12rem;
+        padding-left: 8rem;
+        align-self: flex-start;
+        h1 {
+          margin-top: -0.2rem;
+          text-align: center;
+          font-size: 4.6vw;
+          background-image: -webkit-radial-gradient(left, white, white, #3498db);
+          background-image: radial(to right, left, white, white, #3498db);
+          background-clip: text;
+          -webkit-background-clip: text;
+          text-fill-color: transparent;
+          -webkit-text-fill-color: transparent;
+          span {display: block;}
+          span:nth-child(1) {margin-right:0rem}
+          span:nth-child(2) {margin-right:2rem}
+          span:nth-child(3) {margin-right:6rem}
+          span:nth-child(4) {margin-right:6rem}
+        }
+
+      }
+    }
+  }
+
+  #section4 {
+    height: 100vh;
+    position: relative;
+    .top {
+      background: url('https://s3.amazonaws.com/ijadams/btb/section4-bg.jpg') no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 50%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      h1 {
+        width: 40%;
+        margin-bottom: -1rem;
+        margin-left: 2rem;
+        letter-spacing: 0.1rem;
+        align-self: flex-end;
+        font-size: 4.6vw;
+        line-height: 1em;
+        span {display: block;}
+        span:nth-child(1) {margin-right:8rem}
+        span:nth-child(2) {margin-right:6rem}
+        span:nth-child(3) {margin-right:4rem}
+        span:nth-child(4) {margin-right:2rem}
+        span:nth-child(5) {margin-right:4rem}
+        span:nth-child(6) {margin-right:6rem}
+
+      }
+    }
+    .bottom {
+      background: black;
+      color: white;
+      height: 50%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .l, .r  {
+        width: 50%;
+
+      }
+      .l {
+        padding-left: 12rem;
+        padding-right: 8rem;
+      }
+      .r {
+        padding-right: 12rem;
+        padding-left: 8rem;
+        align-self: flex-start;
+        h1 {
+          margin-top: -0.2rem;
+          text-align: center;
+          color: white;
+          font-size: 4vw;
+          span {display: block;}
+          span:nth-child(1) {margin-right:0rem}
+          span:nth-child(2) {margin-right:2rem}
+          span:nth-child(3) {margin-right:6rem}
+          span:nth-child(4) {margin-right:6rem}
+        }
+
+      }
+    }
+  }
+
+  #section5 {
+    height: 100vh;
+    position: relative;
+    .top {
+      background: url('https://s3.amazonaws.com/ijadams/btb/section5-bg.jpg') no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 50%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      h1 {
+        width: 40%;
+        margin-bottom: -0.4rem;
+        margin-left: 2rem;
+        letter-spacing: 0.1rem;
+        align-self: flex-end;
+        font-size: 4vw;
+        line-height: 1em;
+        color: white;
+        span {display: block;}
+        span:nth-child(1) {margin-right:8rem}
+        span:nth-child(2) {margin-right:6rem}
+        span:nth-child(3) {margin-right:4rem}
+        span:nth-child(4) {margin-right:2rem}
+        span:nth-child(5) {margin-right:4rem}
+        span:nth-child(6) {margin-right:6rem}
+
+      }
+    }
+    .bottom {
+      background: black;
+      color: white;
+      height: 50%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .l, .r  {
+        width: 50%;
+
+      }
+      .l {
+        padding-left: 12rem;
+        padding-right: 8rem;
+      }
+      .r {
+        padding-right: 12rem;
+        padding-left: 8rem;
+        align-self: flex-start;
+        h1 {
+          margin-top: -0.2rem;
+          text-align: center;
+          color: white;
+          font-size: 3.8vw;
+          span {display: block;}
+          span:nth-child(1) {margin-right:4rem;}
+          span:nth-child(2) {margin-right:2rem;}
+          span:nth-child(3) {margin-right:6rem;}
+          span:nth-child(4) {margin-right:6rem;}
+        }
+
+      }
+    }
+  }
+
+  #section6 {
+    height: 100vh;
+    position: relative;
+    .top {
+      background: url('https://s3.amazonaws.com/ijadams/btb/section6-bg.jpg') no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 50%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      h1 {
+        width: 40%;
+        margin-bottom: -0.4rem;
+        margin-left: 2rem;
+        letter-spacing: 0.1rem;
+        align-self: flex-end;
+        font-size: 4vw;
+        line-height: 1em;
+        color: white;
+        span {display: block;}
+        span:nth-child(1) {margin-right:8rem}
+        span:nth-child(2) {margin-right:6rem}
+        span:nth-child(3) {margin-right:4rem}
+        span:nth-child(4) {margin-right:2rem}
+        span:nth-child(5) {margin-right:4rem}
+        span:nth-child(6) {margin-right:6rem}
+
+      }
+    }
+    .bottom {
+      background: black;
+      color: white;
+      height: 50%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        color: white;
+        font-size: 2.4rem;
+        letter-spacing: 1rem;
+      }
+    }
+  }
+
+  #section7 {
+    height: 100vh;
+    position: relative;
+    background: black;
+    .top {
+      height: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        max-width: 50%;
+        color: white;
+        font-size: 2.4rem;
+      }
+    }
+    .bottom {
+      background: black;
+      color: white;
+      height: 50%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        color: white;
+        font-size: 4vw;
+        letter-spacing: 0.1rem;
+      }
+    }
+  }
+}
