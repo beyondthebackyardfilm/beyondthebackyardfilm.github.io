@@ -7,7 +7,8 @@
             <h1>Cast & Crew</h1>
             <ul>
                 {% for cast in site.data.data %}
-                <li><span class="member">{{ cast.member }}</span> <span class="character">{{ cast.character }}</span></li>
+                <li><span class="member">{{ cast.position }}</span> <span
+                  class="character">{{ cast.name }}</span></li>
                 {% endfor %}
             </ul>
         </div>

@@ -4,8 +4,8 @@ $(document).ready(function(){
 
     //add elipses based on text length
     $('#section6 ul li').each(function(index){
-        n = 50 - $(this).find('span.member').text().length + $(this).find('span.character').text().length;
-        $(this).find('span.member').append('.'.repeat(n));
+        n = 30 - $(this).find('span.member').text().length + $(this).find('span.character').text().length;
+        $(this).find('span.member').append('<span>' + ' . '.repeat(n) + '</span>');
     });
 });
        

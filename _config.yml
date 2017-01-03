@@ -9,8 +9,7 @@
 title: Beyond The Backyard
 email: ijadams503@gmail.com
 description: Website for the film Beyond The Backyard..
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "btb.ianjadams.com"
+url: "http://btb.ianjadams.com"
 
 # Build settings
 markdown: kramdown

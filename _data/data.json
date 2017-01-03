@@ -1,26 +1,246 @@
 [
-  {
-    "member": "John Smith",
-    "character": "Character 1"
-  },
-  {
-    "member": "Jason Smith",
-    "character": "Character 2"
-  },
-  {
-    "member": "Janet Smith",
-    "character": "Character 3"
-  },
-  {
-    "member": "Joanne Smith",
-    "character": "Character 4"
-  },
-  {
-    "member": "Jordan Smith",
-    "character": "Character 5"
-  },
-  {
-    "member": "Jalen Smith",
-    "character": "Character 6"
-  }
+ {
+   "position": "Past",
+   "name": "Harrison Salvi"
+ },
+ {
+   "position": "Father",
+   "name": "Pete Magerko Sr."
+ },
+ {
+   "position": "Mother",
+   "name": "Maggie Hardy Margerko"
+ },
+ {
+   "position": "Present",
+   "name": "PJ Magerko"
+ },
+ {
+   "position": "Grandfather",
+   "name": "Joseph Hardy"
+ },
+ {
+   "position": "Scarecrow",
+   "name": "Kathy Drake"
+ },
+ {
+   "position": "Tin Woman",
+   "name": "Robin Freed"
+ },
+ {
+   "position": "Lioness",
+   "name": "Jennifer Fike"
+ },
+ {
+   "position": "Pink Daughter",
+   "name": "Paige Hardy"
+ },
+ {
+   "position": "Green Daughter",
+   "name": "Taylor Hardy"
+ },
+ {
+   "position": "Future",
+   "name": "Nick Collis"
+ },
+ {
+   "position": "Director/Producer",
+   "name": "Peter Magerko"
+ },
+ {
+   "position": "Executive Producer",
+   "name": "Maggie Hardy Magerko"
+ },
+ {
+   "position": "Producer",
+   "name": "Jennifer Martin"
+ },
+ {
+   "position": "Producer",
+   "name": "Deja Glemba"
+ },
+ {
+   "position": "Production Coordinator/Catering/ Events",
+   "name": "Kim Robson"
+ },
+ {
+   "position": "Location Manager",
+   "name": "Trisha Broadwater"
+ },
+ {
+   "position": "Unit Production Manager",
+   "name": "David Yakobovitch"
+ },
+ {
+   "position": "1st Assistant Director",
+   "name": "Kaitlyn Mae Jones"
+ },
+ {
+   "position": "2nd Assistant Director",
+   "name": "Dina Graham"
+ },
+ {
+   "position": "Key Set PA",
+   "name": "Leigh Fitzjames"
+ },
+ {
+   "position": "Set PA",
+   "name": "Arthur Kay Singleton"
+ },
+ {
+   "position": "Set PA",
+   "name": "Oliver Finley"
+ },
+ {
+   "position": "Director of Photography",
+   "name": "Mckenzie Zuleger"
+ },
+ {
+   "position": "1st AC",
+   "name": "Tom Greco"
+ },
+ {
+   "position": "2nd AC",
+   "name": "Isabella Parisot"
+ },
+ {
+   "position": "Steadicam Operator",
+   "name": "Tanner Carlson"
+ },
+ {
+   "position": "DIT / Editor on set",
+   "name": "Hunter Fairstone"
+ },
+ {
+   "position": "Set Videographer",
+   "name": "Luciano Alexander"
+ },
+ {
+   "position": "Gaffer",
+   "name": "Dahlia Dennison"
+ },
+ {
+   "position": "Best Boy Electric",
+   "name": "John Depinto"
+ },
+ {
+   "position": "Electric",
+   "name": "Kat Cameron"
+ },
+ {
+   "position": "Key Grip",
+   "name": "Stephen Ohocinski"
+ },
+ {
+   "position": "Best Boy Grip",
+   "name": "Jesse Pultizer Kennedy"
+ },
+ {
+   "position": "Grip",
+   "name": "Andre Bonk"
+ },
+ {
+   "position": "Sound Mixer/Boom Op",
+   "name": "Nolan Jenkins"
+ },
+ {
+   "position": "Production Designer",
+   "name": "Bianca Valle"
+ },
+ {
+   "position": "Art PA",
+   "name": "Alex Levine"
+ },
+ {
+   "position": "Art PA",
+   "name": "Benjamin Jon"
+ },
+ {
+   "position": "Florist",
+   "name": "Bill James"
+ },
+ {
+   "position": "Florist",
+   "name": "Steve Neubauer"
+ },
+ {
+   "position": "Costume Designer",
+   "name": "Alexander Cole Gottlieb"
+ },
+ {
+   "position": "Associate Costumer Designer",
+   "name": "Jackson Wiederhoft"
+ },
+ {
+   "position": "Hair & Make Up Designer",
+   "name": "Naomi Raddatz"
+ },
+ {
+   "position": "Costume Design Assistant/PA",
+   "name": "Madeline Porterfield"
+ },
+ {
+   "position": "Hair Makeup Artist - Assistant",
+   "name": "Arielle Williams"
+ },
+ {
+   "position": "Script Supervisor",
+   "name": "Heather Cole"
+ },
+ {
+   "position": "Casting Director/Coordinator",
+   "name": "Marty Mundy"
+ },
+ {
+   "position": "Animal Wrangler",
+   "name": "Mandy Burnsworth"
+ },
+ {
+   "position": "Set Photographer",
+   "name": "Didi Sea"
+ },
+ {
+   "position": "Transportation Captain",
+   "name": "Pete Centrella"
+ },
+ {
+   "position": "Driver",
+   "name": "Jason Centrella"
+ },
+ {
+   "position": "Driver",
+   "name": "John O'Keefe"
+ },
+ {
+   "position": "Driver",
+   "name": "Thomas Quinn"
+ },
+ {
+   "position": "Driver",
+   "name": "Cosmo Centrella"
+ },
+ {
+   "position": "Hot Air Balloon Pilot #1",
+   "name": "Richard Hughes"
+ },
+ {
+   "position": "Hot Air Balloon Pilot #2",
+   "name": "Mark MackSkimming"
+ },
+ {
+   "position": "Hot Air Balloon Coordinator",
+   "name": "Jim Krejci"
+ },
+ {
+   "position": "On Set Medic",
+   "name": "Vicki Ostrowski"
+ },
+ {
+   "position": "Carousel Operator",
+   "name": "Mandy Burnsworth"
+ },
+ {
+   "position": "On Set Security",
+   "name": "Dan Lewis"
+ }
 ]
