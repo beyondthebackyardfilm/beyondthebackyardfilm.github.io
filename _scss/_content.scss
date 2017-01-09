@@ -1,5 +1,6 @@
 body {
   background: black;
+  overflow-x: hidden;
   p {
     display: block;
     overflow: auto;
@@ -72,6 +73,9 @@ body {
           display: inline-block;
           font-family: 'derivia';
           letter-spacing: 0.2rem;
+          @media screen and (max-width: 40rem) {
+            font-size: 12px;
+          }
           &:nth-child(2), &:nth-child(4) {
             margin: 0 5rem;
             @media screen and (max-width: 64rem) {
@@ -93,8 +97,11 @@ body {
       align-self: flex-start;
       img {
         width: auto;
-        max-height: 80vh;
+        max-height: 75vh;
         max-width: 100%;
+        @media screen and (max-width: 64rem) {
+          max-height: 66vh;
+        }
       }
     }
     #watch-trailer {
@@ -107,6 +114,9 @@ body {
         margin-bottom: 0.8rem;
         transition: 0.2s ease-in;
         opacity: 0.8;
+        @media screen and (max-width: 64rem) {
+          max-width: 200px;
+        }
         &:hover {
           cursor: pointer;
           opacity: 1;
@@ -693,6 +703,10 @@ body {
       ul {
         text-align: center;
         font-size: 12px;
+        li {
+          padding-top: 0.8rem;
+          padding-bottom: 0.8rem;
+        }
         @media screen and (max-width: 64rem) {
           .member:after {
             margin-left: 0.2rem;
@@ -703,9 +717,6 @@ body {
             &:after {
               content: 'p';
             }
-          }
-          li {
-            padding-bottom: 1rem;
           }
         }
       }
@@ -725,6 +736,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-top: 4rem;
       .row {
         max-width: 50%;
         color: white;
