@@ -1,12 +1,23 @@
 body {
   background: black;
+  p {
+    display: block;
+    overflow: auto;
+  }
+  a {
+    &:focus, &:active {
+      outline: none;
+    }
+  }
 }
+
 .site-wrapper {
   @media screen and (max-width: 64rem) {
     .parallax img {
       display: none !important;
     }
     section {
+      height: 100% !important;
       .bottom, .top {
         min-height: inherit !important;
         display: inherit !important;
@@ -17,9 +28,17 @@ body {
           .container {
             p {
               padding: 0 2rem !important;
+              display: block;
+              overflow: auto;
             }
           }
         }
+      }
+      @media screen and (max-height: 650px) and (min-width: 64rem) {
+        min-height: 600px;
+      }
+      @media screen and (min-width: 64rem) {
+        min-height: 600px;
       }
     }
   }
@@ -28,13 +47,14 @@ body {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    min-height: 450px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     @media screen and (max-width: 64rem) {
-      height:100vh;
-      min-height: inherit;
+      height: 100%;
+      min-height: 100vh;
     }
     .nav {
       position: absolute;
@@ -97,14 +117,21 @@ body {
 
   #section2 {
     height: 100vh;
+    min-height: 450px;
     position: relative;
     background: black;
     z-index: 0;
+    @media screen and (max-width: 64rem) {
+      height: 100vh;
+    }
+    @media screen and (max-width: 40rem) {
+      height: 150vh;
+    }
     .top {
       background: url('https://s3.amazonaws.com/ijadams/btb/section-2-bg-top.jpg') no-repeat;
       background-size: cover;
       background-position: center;
-      height: 65%;
+      height: 60%;
       position: relative;
       display: flex;
       align-items: center;
@@ -115,10 +142,22 @@ body {
         letter-spacing: 0.1rem;
         align-self: flex-end;
         font-size: 6vw;
-        padding-bottom: 5rem;
+        padding-bottom: 0.2rem;
         line-height: 1em;
         color: white;
         text-shadow: 1px 3px black;
+        @media screen and (max-width: 64rem) {
+          width: 50%;
+          padding-bottom: 0;
+          padding-top: 10rem;
+        }
+        @media screen and (max-width: 40rem) {
+          font-size: 9vw;
+          width: 50%;
+          padding-bottom: 0;
+          padding-top: 10rem;
+        }
+
         span {
           display: block;
         }
@@ -135,6 +174,9 @@ body {
           margin-right: 6rem
         }
       }
+      @media screen and (max-width: 40rem) {
+        background-position: 70% 50%;
+      }
     }
     .middle {
       height: 5%;
@@ -144,16 +186,38 @@ body {
     .bottom {
       background: black;
       color: white;
-      height: 30%;
+      height: 35%;
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
+      background: url(https://s3.amazonaws.com/ijadams/btb/branchL.png) -200% 0%  no-repeat, url(https://s3.amazonaws.com/ijadams/btb/branchR.png) 200% 0% no-repeat, black;
+      background-color: black;
+      transition: background 3s ease-in-out;
+      background-size: contain;
+      &.scrolled {
+        background: url(https://s3.amazonaws.com/ijadams/btb/branchL.png) left bottom no-repeat, url(https://s3.amazonaws.com/ijadams/btb/branchR.png) right bottom no-repeat;
+        background-color: black;
+        background-size: contain;
+      }
+      @media screen and (max-width: 64rem) {
+        background: black;
+      }
       .container {
         width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         p {
           margin-top: 0;
           padding: 0 10rem;
+        }
+      }
+      @media screen and (max-width: 64rem) {
+        .container p {
+          padding: 0 2rem;
+          margin-bottom: 0;
         }
       }
     }
@@ -161,7 +225,14 @@ body {
 
   #section3 {
     height: 100vh;
+    min-height: 450px;
     position: relative;
+    @media screen and (max-width: 64rem) {
+      height: 100vh;
+    }
+    @media screen and (max-width: 40rem) {
+      height: 150vh;
+    }
     .top {
       background: url('https://s3.amazonaws.com/ijadams/btb/section3-bg.jpg') no-repeat;
       background-size: cover;
@@ -170,6 +241,9 @@ body {
       position: relative;
       display: flex;
       align-items: center;
+      @media screen and (max-width: 40rem) {
+        background-position: 40% 50%;
+      }
       h1 {
         z-index: 1;
         width: 40%;
@@ -179,6 +253,18 @@ body {
         align-self: flex-end;
         font-size: 4.6vw;
         line-height: 1em;
+        @media screen and (max-width: 64rem) {
+          width: 40%;
+          padding-bottom: 0;
+          padding-top: 10rem;
+          font-size: 6vw;
+        }
+        @media screen and (max-width: 40rem) {
+          font-size: 9vw;
+          width: 50%;
+          padding-bottom: 0;
+          padding-top: 10rem;
+        }
         span {
           display: block;
         }
@@ -211,18 +297,35 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      background: url(https://s3.amazonaws.com/ijadams/btb/branchL.png) -200% 0%  no-repeat, url(https://s3.amazonaws.com/ijadams/btb/branchR.png) 200% 0% no-repeat, black;
+      background-color: black;
+      transition: 5s ease-in-out;
+      background-size: contain;
+      &.scrolled {
+        background: url(https://s3.amazonaws.com/ijadams/btb/branchL.png) left bottom no-repeat, url(https://s3.amazonaws.com/ijadams/btb/branchR.png) right bottom no-repeat;
+        background-color: black;
+        background-size: contain;
+      }
+      @media screen and (max-width: 64rem) {
+        background: black;
+      }
       .l, .r {
         width: 50%;
-
       }
       .l {
-        padding-left: 12rem;
-        padding-right: 8rem;
+        padding-left: 8rem;
+        padding-right: 0rem;
+        @media screen and (max-width: 64rem) {
+          padding: 0 2rem;
+        }
       }
       .r {
-        padding-right: 12rem;
-        padding-left: 8rem;
+        padding-right: 8rem;
+        padding-left: 0rem;
         align-self: flex-start;
+        @media screen and (max-width: 64rem) {
+          padding: 0 2rem;
+        }
         h1 {
           margin-top: -0.2rem;
           text-align: center;
@@ -233,6 +336,10 @@ body {
           -webkit-background-clip: text;
           text-fill-color: transparent;
           -webkit-text-fill-color: transparent;
+          @media screen and (max-width: 64rem) {
+            font-size: 8vw;
+            margin-top: 2rem;
+          }
           span {
             display: block;
           }
@@ -256,7 +363,14 @@ body {
 
   #section4 {
     height: 100vh;
+    min-height: 450px;
     position: relative;
+    @media screen and (max-width: 64rem) {
+      height: 125vh;
+    }
+    @media screen and (max-width: 40rem) {
+      height: 175vh;
+    }
     .top {
       background: url('https://s3.amazonaws.com/ijadams/btb/section4-bg.jpg') no-repeat;
       background-size: cover;
@@ -265,6 +379,9 @@ body {
       position: relative;
       display: flex;
       align-items: center;
+      @media screen and (max-width: 64rem) {
+        background-position: 100% 50%;
+      }
       h1 {
         z-index: 1;
         width: 40%;
@@ -274,6 +391,17 @@ body {
         align-self: flex-end;
         font-size: 4.6vw;
         line-height: 1em;
+        @media screen and (max-width: 64rem) {
+          width: 65%;
+          padding-bottom: 0;
+          padding-top: 2rem;
+          font-size: 6vw;
+        }
+        @media screen and (max-width: 40rem) {
+          font-size: 8vw;
+          width: 50%;
+          padding-bottom: 0;
+        }
         span {
           display: block;
         }
@@ -306,18 +434,35 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      background: url(https://s3.amazonaws.com/ijadams/btb/branchL.png) -200% 0%  no-repeat, url(https://s3.amazonaws.com/ijadams/btb/branchR.png) 200% 0% no-repeat, black;
+      background-color: black;
+      transition: 5s ease-in-out;
+      background-size: contain;
+      &.scrolled {
+        background: url(https://s3.amazonaws.com/ijadams/btb/branchL.png) left bottom no-repeat, url(https://s3.amazonaws.com/ijadams/btb/branchR.png) right bottom no-repeat;
+        background-color: black;
+        background-size: contain;
+      }
+      @media screen and (max-width: 64rem) {
+        background: black;
+      }
       .l, .r {
         width: 50%;
-
       }
       .l {
-        padding-left: 12rem;
-        padding-right: 8rem;
+        padding-left: 8rem;
+        padding-right: 0rem;
+        @media screen and (max-width: 64rem) {
+          padding: 0 2rem;
+        }
       }
       .r {
-        padding-right: 12rem;
-        padding-left: 8rem;
+        padding-right: 8rem;
+        padding-left: 0rem;
         align-self: flex-start;
+        @media screen and (max-width: 64rem) {
+          padding: 0 2rem;
+        }
         h1 {
           margin-top: -0.2rem;
           text-align: center;
@@ -338,6 +483,10 @@ body {
           span:nth-child(4) {
             margin-right: 6rem
           }
+          @media screen and (max-width: 64rem) {
+            font-size: 8vw;
+            margin-top: 2rem;
+          }
         }
 
       }
@@ -346,7 +495,14 @@ body {
 
   #section5 {
     height: 100vh;
+    min-height: 450px;
     position: relative;
+    @media screen and (max-width: 64rem) {
+      height: 125vh;
+    }
+    @media screen and (max-width: 40rem) {
+      height: 180vh;
+    }
     .top {
       background: url('https://s3.amazonaws.com/ijadams/btb/section5-bg.jpg') no-repeat;
       background-size: cover;
@@ -365,6 +521,18 @@ body {
         font-size: 4vw;
         line-height: 1em;
         color: white;
+        @media screen and (max-width: 64rem) {
+          width: 50%;
+          padding-bottom: 0;
+          padding-top: 2rem;
+          font-size: 6vw;
+
+        }
+        @media screen and (max-width: 40rem) {
+          font-size: 8vw;
+          width: 50%;
+          padding-bottom: 0;
+        }
         span {
           display: block;
         }
@@ -386,7 +554,6 @@ body {
         span:nth-child(6) {
           margin-right: 6rem
         }
-
       }
     }
     .bottom {
@@ -397,18 +564,33 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      background: url(https://s3.amazonaws.com/ijadams/btb/branchL.png) -200% 0%  no-repeat, url(https://s3.amazonaws.com/ijadams/btb/branchR.png) 200% 0% no-repeat, black;
+      background-color: black;
+      transition: background 3s ease-in-out;
+      background-size: contain;
+      &.scrolled {
+        background: url(https://s3.amazonaws.com/ijadams/btb/branchL.png) left bottom no-repeat, url(https://s3.amazonaws.com/ijadams/btb/branchR.png) right bottom no-repeat;
+        background-color: black;
+        background-size: contain;
+      }
       .l, .r {
         width: 50%;
 
       }
       .l {
-        padding-left: 12rem;
-        padding-right: 8rem;
+        padding-left: 8rem;
+        padding-right: 0rem;
+        @media screen and (max-width: 64rem) {
+          padding: 0 2rem;
+        }
       }
       .r {
-        padding-right: 12rem;
-        padding-left: 8rem;
+        padding-right: 8rem;
+        padding-left: 0rem;
         align-self: flex-start;
+        @media screen and (max-width: 64rem) {
+          padding: 0 2rem;
+        }
         h1 {
           margin-top: -0.2rem;
           text-align: center;
@@ -429,6 +611,11 @@ body {
           span:nth-child(4) {
             margin-right: 6rem;
           }
+          @media screen and (max-width: 64rem) {
+            font-size: 8vw;
+            margin-top: 2rem;
+          }
+
         }
 
       }
@@ -437,6 +624,7 @@ body {
 
   #section6 {
     height: 100%;
+    min-height: 450px;
     position: relative;
     .top {
       background: url('https://s3.amazonaws.com/ijadams/btb/section6-bg.jpg') no-repeat;
@@ -488,16 +676,38 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      @media screen and (max-width: 64rem) {
+        padding: 0 2rem;
+      }
       h1 {
+        margin-top: 4rem;
         color: white;
         font-size: 2.4rem;
         letter-spacing: 1rem;
         text-align: center;
         margin-bottom: 3rem;
+        @media screen and (max-width: 64rem) {
+          letter-spacing: 0.2em;
+        }
       }
       ul {
         text-align: center;
         font-size: 12px;
+        @media screen and (max-width: 64rem) {
+          .member:after {
+            margin-left: 0.2rem;
+            content: '//';
+          }
+          .elips {
+            display: none;
+            &:after {
+              content: 'p';
+            }
+          }
+          li {
+            padding-bottom: 1rem;
+          }
+        }
       }
     }
   }
@@ -519,10 +729,14 @@ body {
         max-width: 50%;
         color: white;
         text-align: center;
+        @media screen and (max-width: 64rem) {
+          max-width: 100%;
+        }
         h1 {
           font-size: 2.4rem;
           letter-spacing: 1rem;
           margin-bottom: 4rem;
+          margin-top: 4rem;
         }
         h4 {
           font-weight: 700;
@@ -542,6 +756,19 @@ body {
             &:hover {
               cursor: pointer;
               opacity: 1;
+            }
+            @media screen and (max-width: 64rem) {
+              &:first-of-type {
+                text-align: right;
+                padding-right:1rem;
+              }
+              &:last-of-type {
+                text-align: left;
+                padding-left:1rem;
+              }
+            }
+            @media screen and (max-width: 40rem) {
+              font-size: 2.8rem;
             }
           }
         }
