@@ -10,6 +10,10 @@ body {
       outline: none;
     }
   }
+  .lity-hide {
+    display: none;
+  }
+  ul#more {color: white; text-align: center;overflow-y: scroll;padding-bottom: 5rem;}
   .parallax {
     z-index: 0;
     img {
@@ -41,13 +45,13 @@ body {
           }
         }
       }
-      @media screen and (max-height: 650px) and (min-width: 64rem) {
-        min-height: 600px;
-      }
-      @media screen and (min-width: 64rem) {
-        min-height: 600px;
-      }
     }
+  }
+  @media screen and (max-height: 650px) and (min-width: 64rem) {
+    section {min-height: 800px !important;}
+  }
+  @media screen and (min-width: 64rem) {
+    section {min-height: 600px;}
   }
   #section1 {
     background: url('https://s3.amazonaws.com/ijadams/btb/section1-bg.jpg') no-repeat;
@@ -161,7 +165,7 @@ body {
         margin-left: 2rem;
         letter-spacing: 0.1rem;
         align-self: flex-start;
-        font-size: 6vw;
+        font-size: 5vw;
         line-height: 1em;
         color: white;
         text-shadow: 1px 3px black;
@@ -262,8 +266,7 @@ body {
         margin-bottom: -1rem;
         margin-left: 2rem;
         letter-spacing: 0.1rem;
-        align-self: flex-end;
-        font-size: 4.6vw;
+        font-size: 4vw;
         line-height: 1em;
         @media screen and (max-width: 64rem) {
           width: 40%;
@@ -328,12 +331,10 @@ body {
       .r {
         padding-right: 8rem;
         padding-left: 0rem;
-        align-self: flex-start;
         @media screen and (max-width: 64rem) {
           padding: 0 2rem;
         }
         h1 {
-          margin-top: -0.2rem;
           text-align: center;
           font-size: 4.6vw;
           color: white;
@@ -387,11 +388,11 @@ body {
         z-index: 1;
         width: 40%;
         margin-bottom: -1rem;
-        margin-left: 2rem;
         letter-spacing: 0.1rem;
-        align-self: flex-end;
-        font-size: 4.6vw;
+        font-size: 4.2vw;
         line-height: 1em;
+        margin: 0;
+        margin-left: 2rem;
         @media screen and (max-width: 64rem) {
           width: 45%;
           padding-bottom: 0;
@@ -454,12 +455,10 @@ body {
       .r {
         padding-right: 8rem;
         padding-left: 0rem;
-        align-self: flex-start;
         @media screen and (max-width: 64rem) {
           padding: 0 2rem;
         }
         h1 {
-          margin-top: -0.2rem;
           text-align: center;
           color: white;
           font-size: 4vw;
@@ -511,10 +510,8 @@ body {
       h1 {
         z-index: 1;
         width: 40%;
-        margin-bottom: -0.4rem;
         margin-left: 2rem;
         letter-spacing: 0.1rem;
-        align-self: flex-end;
         font-size: 4vw;
         line-height: 1em;
         color: white;
@@ -578,12 +575,10 @@ body {
       .r {
         padding-right: 8rem;
         padding-left: 0rem;
-        align-self: flex-start;
         @media screen and (max-width: 64rem) {
           padding: 0 2rem;
         }
         h1 {
-          margin-top: -0.2rem;
           text-align: center;
           color: white;
           font-size: 3.8vw;
@@ -667,6 +662,10 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      .row {
+        text-align: center;
+        a {color: white;padding-top: 2rem;display:block;text-transform: lowercase;}
+      }
       @media screen and (max-width: 64rem) {
         padding: 0 2rem;
       }
@@ -684,12 +683,8 @@ body {
       ul {
         text-align: center;
         font-size: 12px;
-        columns: 3;
         margin: 0 auto;
         padding: 0 2rem;
-        @media screen and (max-width: 64rem) {
-          columns: 2;
-        }
         li {
           padding-top: 0.8rem;
           padding-bottom: 0.8rem;

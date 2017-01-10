@@ -6,9 +6,19 @@
         <div class="row">
             <h1>Cast & Crew</h1>
             <ul>
-                {% for cast in site.data.data %}
+                {% for cast in site.data.data limit:15 %}
                 <li><span class="member">{{ cast.position }}</span> <span
                   class="character">{{ cast.name }}</span></li>
+                {% endfor %}
+            </ul>
+            <a href="#more" data-lity>
+                See full list of cast and crew
+            </a>
+            <ul id="more" class="lity-hide">
+                {% for cast in site.data.data %}
+                <li><span class="member">{{ cast.position }}</span> <span
+                        class="character">{{ cast.name }}</span>
+                </li>
                 {% endfor %}
             </ul>
         </div>
