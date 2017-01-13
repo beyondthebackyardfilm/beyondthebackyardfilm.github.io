@@ -5,29 +5,45 @@
     <div class="bottom">
         <div id="cast" class="row">
             <h1>Cast</h1>
-            <ul id="cast">
-                {% for cast in site.data.data %}
-                <li><span class="member">{{ cast.position }}</span> <span
-                        class="character">{{ cast.name }}</span>
+            <ul class="cast-list">
+                {% for cast in site.data.cast1 %}
+                <li><span class="member">{{ cast.name }}</span> as <span
+                        class="character">{{ cast.position }}</span>
                 </li>
                 {% endfor %}
             </ul>
-            <span id="more">
-                See full list of cast and crew
-            </span>
+            <ul class="cast-list">
+                {% for cast in site.data.cast2 %}
+                <li><span class="member">{{ cast.name }}</span> as <span
+                        class="character">{{ cast.position }}</span>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
         <div id="crew" class="row">
             <h1>Crew</h1>
-            <ul id="cast">
-                {% for cast in site.data.data %}
-                <li><span class="member">{{ cast.position }}</span> <span
-                        class="character">{{ cast.name }}</span>
+            <ul class="crew-list">
+                {% for cast in site.data.crew1 %}
+                <li><span class="member">{{ cast.name }}</span> <span
+                        class="character">{{ cast.position }}</span>
                 </li>
                 {% endfor %}
             </ul>
-            <span id="more">
-                See full list of cast and crew
-            </span>
+            <ul class="crew-list">
+                {% for cast in site.data.crew2 %}
+                <li><span class="member">{{ cast.name }}</span> <span
+                        class="character">{{ cast.position }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div id="thanks" class="row">
+            <h1>Special Thanks</h1>
+            <ul class="crew-list">
+                <li>Nemacolin Woodlands</li>
+                <li>Darrell Wilson</li>
+                <li>84 Lumber</li>
+            </ul>
         </div>
     </div>
 </section>

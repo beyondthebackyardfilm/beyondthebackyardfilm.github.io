@@ -4,13 +4,6 @@ $(document).ready(function () {
 
     $('section').scrollSpy({scrollOffset: 0});
 
-    //add elipses based on text length
-    $('#section6 ul li').each(function (index) {
-        n = 35 - $(this).find('span.member').text().length + $(this).find('span.character').text().length;
-        $(this).find('span.member').append('<span class="elips">' + ' . '.repeat(n) + '</span>');
-    });
-
-
     if ($(window).width() > 768) {
         $(window).scroll(function () {
             var scrollTop = $("body").scrollTop();
@@ -60,7 +53,6 @@ $(document).ready(function () {
             });
 
 
-
             //section4
             $('#section4 .top h1').css({
                 'filter': 'blur(' + oVal4 + 'px)',
@@ -96,13 +88,14 @@ $(document).ready(function () {
 
 
         });
-    };
+    }
+    ;
 
 
     $('#cast li:gt(15)').hide();
-    $('#more').click(function() {
+    $('#more').click(function () {
         $('ul li:gt(15)').slideDown("fast");
-        $('#more').css('display','none');
+        $('#more').css('display', 'none');
     });
 
 });

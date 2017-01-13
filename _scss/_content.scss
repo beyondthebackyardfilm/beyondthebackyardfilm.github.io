@@ -678,16 +678,24 @@ body {
       }
     }
     .bottom {
+      padding-top: 2rem;
       background: black;
       color: white;
       height: 100%;
       position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       .row {
         text-align: center;
+        max-width: 650px !important;
         a {color: white;padding-top: 2rem;display:block;text-transform: lowercase;}
+      }
+      #thanks ul {
+        float: inherit;
+        li {
+          color: white;
+          text-transform: uppercase;
+          font-style: normal;
+          text-align: center;
+        }
       }
       @media screen and (max-width: 64rem) {
         padding: 0 2rem;
@@ -708,10 +716,25 @@ body {
         font-size: 12px;
         margin: 0 auto;
         padding: 0 2rem;
-        columns: 2;
+        width: 50%;
+        display: inline-block;
+        float: left;
         li {
           padding-top: 0.8rem;
           padding-bottom: 0.8rem;
+          font-family: 'derivia', serif;
+          font-style: italic;
+          color: gray;
+          text-align: left;
+          span.member {
+            font-style: normal;
+            text-transform: uppercase;
+            color: white;
+            letter-spacing: 1px;
+          }
+          span.character {
+            text-transform: capitalize;
+          }
         }
         @media screen and (max-width: 64rem) {
           .member:after {
@@ -730,9 +753,10 @@ body {
   }
 
   #section7 {
-    height: 100vh;
+    height: 50vh;
     position: relative;
-    background: url('https://s3.amazonaws.com/ijadams/btb/footer.jpg') no-repeat;
+    //background: url('https://s3.amazonaws.com/ijadams/btb/footer.jpg') no-repeat;
+    background: black;
     background-size: cover;
     background-position: 50% 80px;
     @media screen and (min-width: 64rem) {
@@ -800,6 +824,7 @@ body {
       }
     }
     .bottom {
+      display: none;
       color: white;
       height: 50%;
       position: relative;
