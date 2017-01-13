@@ -1,7 +1,7 @@
 $(document).ready(function () {
-    $(function () {
-        $('.parallax').parallax();
-    });
+
+    $('.parallax').parallax();
+
     $('section').scrollSpy({scrollOffset: 0});
 
     //add elipses based on text length
@@ -19,67 +19,61 @@ $(document).ready(function () {
             var elementOffset4 = $('#section4').offset().top;
             var elementOffset5 = $('#section5').offset().top;
 
-            var elementOffset2t = $('#section2 .bottom').offset().top;
-            var elementOffset3t = $('#section3 .bottom').offset().top;
-            var elementOffset4t = $('#section4 .bottom').offset().top;
-            var elementOffset5t = $('#section5 .bottom').offset().top;
+            var elementOffset2t = $('#section2 .top').offset().top;
+            var elementOffset3t = $('#section3 .top').offset().top;
+            var elementOffset4t = $('#section4 .top').offset().top;
+            var elementOffset5t = $('#section5 .top').offset().top;
 
-            var oVal2 = (elementOffset2 - scrollTop) / 50;
-            var oVal3 = (elementOffset3 - scrollTop) / 50;
-            var oVal4 = (elementOffset4 - scrollTop) / 50;
-            var oVal5 = (elementOffset5 - scrollTop) / 50;
+            var oVal2 = (elementOffset2 - scrollTop) / 30;
+            var oVal3 = (elementOffset3 - scrollTop) / 30;
+            var oVal4 = (elementOffset4 - scrollTop) / 30;
+            var oVal5 = (elementOffset5 - scrollTop) / 30;
 
 
-            var oVal2t = (elementOffset2t - scrollTop) / 50;
-            var oVal3t = (elementOffset3t - scrollTop) / 50;
-            var oVal4t = (elementOffset4t - scrollTop) / 50;
-            var oVal5t = (elementOffset5t - scrollTop) / 50;
+            //var oVal2t = (elementOffset2t - scrollTop) / 30;
+            var oVal3t = (elementOffset3t - scrollTop) / 30;
+            var oVal4t = (elementOffset4t - scrollTop) / 30;
+            var oVal5t = (elementOffset5t - scrollTop) / 30;
 
             //section2
             $('#section2 .top h1').css({
                 'filter': 'blur(' + oVal2 + 'px)',
                 '-webkit-filter': 'blur(' + oVal2 + 'px)',
-                '-moz-filter': 'blur(' + oVal2 + 'px)'
-            });
-
-            $('#section2 .top').css({
+                '-moz-filter': 'blur(' + oVal2 + 'px)',
                 'opacity': 1 - (Math.abs(oVal2) / 18)
             });
+
 
             //section3
             $('#section3 .top h1').css({
                 'filter': 'blur(' + oVal3 + 'px)',
                 '-webkit-filter': 'blur(' + oVal3 + 'px)',
-                '-moz-filter': 'blur(' + oVal3 + 'px)'
+                '-moz-filter': 'blur(' + oVal3 + 'px)',
+                'opacity': 1 - (Math.abs(oVal3) / 18)
             });
 
             $('#section3 .bottom h1').css({
                 'filter': 'blur(' + oVal3t + 'px)',
                 '-webkit-filter': 'blur(' + oVal3t + 'px)',
-                '-moz-filter': 'blur(' + oVal3t + 'px)'
+                '-moz-filter': 'blur(' + oVal3t + 'px)',
+                'opacity': 1 - (Math.abs(oVal3t) / 18)
             });
 
-
-            $('#section3 .top').css({
-                'opacity': 1 - (Math.abs(oVal3) / 18)
-            });
 
 
             //section4
             $('#section4 .top h1').css({
                 'filter': 'blur(' + oVal4 + 'px)',
                 '-webkit-filter': 'blur(' + oVal4 + 'px)',
-                '-moz-filter': 'blur(' + oVal4 + 'px)'
+                '-moz-filter': 'blur(' + oVal4 + 'px)',
+                'opacity': 1 - (Math.abs(oVal4) / 18)
             });
 
             $('#section4 .bottom h1').css({
                 'filter': 'blur(' + oVal4t + 'px)',
                 '-webkit-filter': 'blur(' + oVal4t + 'px)',
-                '-moz-filter': 'blur(' + oVal4t + 'px)'
-            });
-
-            $('#section4 .top').css({
-                'opacity': 1 - (Math.abs(oVal4) / 18)
+                '-moz-filter': 'blur(' + oVal4t + 'px)',
+                'opacity': 1 - (Math.abs(oVal4t) / 18)
             });
 
 
@@ -87,22 +81,28 @@ $(document).ready(function () {
             $('#section5 .top h1').css({
                 'filter': 'blur(' + oVal5 + 'px)',
                 '-webkit-filter': 'blur(' + oVal5 + 'px)',
-                '-moz-filter': 'blur(' + oVal5 + 'px)'
+                '-moz-filter': 'blur(' + oVal5 + 'px)',
+                'opacity': 1 - (Math.abs(oVal5) / 18)
+
             });
 
 
             $('#section5 .bottom h1').css({
                 'filter': 'blur(' + oVal5t + 'px)',
                 '-webkit-filter': 'blur(' + oVal5t + 'px)',
-                '-moz-filter': 'blur(' + oVal5t + 'px)'
-            });
-
-            $('#section5 .top').css({
-                'opacity': 1 - (Math.abs(oVal5) / 18)
+                '-moz-filter': 'blur(' + oVal5t + 'px)',
+                'opacity': 1 - (Math.abs(oVal5t) / 18)
             });
 
 
         });
     };
+
+
+    $('#cast li:gt(15)').hide();
+    $('#more').click(function() {
+        $('ul li:gt(15)').slideDown("fast");
+        $('#more').css('display','none');
+    });
 
 });

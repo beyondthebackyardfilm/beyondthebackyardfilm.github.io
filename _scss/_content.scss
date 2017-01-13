@@ -13,11 +13,27 @@ body {
   .lity-hide {
     display: none;
   }
-  ul#more {color: white; text-align: center;overflow-y: scroll;padding-bottom: 5rem;}
+  #more {
+    margin-top: 2rem;
+    display: block;
+    &:hover {
+      cursor: pointer;
+    }
+  }
   .parallax {
     z-index: 0;
     img {
       display: inherit !important;
+    }
+  }
+  @media screen and (max-width: 40rem) {
+    #section2, #section3, #section4, #section5 {
+      .bottom .l {
+        margin-top: 5rem;
+      }
+      .top h1, .bottom h1 {
+        display: none;
+      }
     }
   }
 }
@@ -210,7 +226,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      background: url(https://s3.amazonaws.com/ijadams/btb/branchL.png) left bottom no-repeat, url(https://s3.amazonaws.com/ijadams/btb/branchR.png) right bottom no-repeat;
+      background: url(https://s3.amazonaws.com/ijadams/btb/branchL.png) left bottom no-repeat, url(https://s3.amazonaws.com/ijadams/btb/branchR2.png) right bottom no-repeat;
       background-color: black;
       background-size: contain;
       @media screen and (max-width: 64rem) {
@@ -229,6 +245,7 @@ body {
       }
       @media screen and (max-width: 64rem) {
         .container p {
+          margin-top: 2rem;
           padding: 0 2rem;
           margin-bottom: 0;
         }
@@ -259,6 +276,9 @@ body {
       }
       @media screen and (max-width: 40rem) {
         background-position: 40% 50%;
+      }
+      img {
+        left: 47%;
       }
       h1 {
         z-index: 1;
@@ -312,7 +332,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      background: url(https://s3.amazonaws.com/ijadams/btb/branchL.png) left bottom no-repeat, url(https://s3.amazonaws.com/ijadams/btb/branchR.png) right bottom no-repeat;
+      background: url(https://s3.amazonaws.com/ijadams/btb/branchL2.png) left bottom no-repeat, url(https://s3.amazonaws.com/ijadams/btb/branchR.png) right bottom no-repeat;
       background-color: black;
       background-size: contain;
       @media screen and (max-width: 64rem) {
@@ -436,7 +456,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      background: url(https://s3.amazonaws.com/ijadams/btb/branchL.png) left bottom no-repeat, url(https://s3.amazonaws.com/ijadams/btb/branchR.png) right bottom no-repeat;
+      background: url(https://s3.amazonaws.com/ijadams/btb/branchL.png) left bottom no-repeat, url(https://s3.amazonaws.com/ijadams/btb/branchR2.png) right bottom no-repeat;
       background-color: black;
       background-size: contain;
       @media screen and (max-width: 64rem) {
@@ -558,9 +578,12 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      background: url(https://s3.amazonaws.com/ijadams/btb/branchL.png) left bottom no-repeat, url(https://s3.amazonaws.com/ijadams/btb/branchR.png) right bottom no-repeat;
+      background: url(https://s3.amazonaws.com/ijadams/btb/branchL2.png) left bottom no-repeat, url(https://s3.amazonaws.com/ijadams/btb/branchR.png) right bottom no-repeat;
       background-color: black;
       background-size: contain;
+      @media screen and (max-width: 64rem) {
+        background: black;
+      }
       .l, .r {
         width: 50%;
 
@@ -685,6 +708,7 @@ body {
         font-size: 12px;
         margin: 0 auto;
         padding: 0 2rem;
+        columns: 2;
         li {
           padding-top: 0.8rem;
           padding-bottom: 0.8rem;
@@ -722,6 +746,7 @@ body {
       align-items: center;
       justify-content: center;
       margin-top: 8rem;
+      a {color: white;}
       .row {
         max-width: 50%;
         color: white;
@@ -750,6 +775,9 @@ body {
             padding: 0;
             opacity: 0.8;
             transition: 0.2s;
+            a {
+              color: white;
+            }
             &:hover {
               cursor: pointer;
               opacity: 1;

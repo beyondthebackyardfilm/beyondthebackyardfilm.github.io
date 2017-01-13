@@ -3,24 +3,31 @@
         <img src="https://s3.amazonaws.com/ijadams/btb/section6-bg.jpg">
     </div>
     <div class="bottom">
-        <div class="row">
-            <h1>Cast & Crew</h1>
-            <ul>
-                {% for cast in site.data.data limit:15 %}
-                <li><span class="member">{{ cast.position }}</span> <span
-                  class="character">{{ cast.name }}</span></li>
-                {% endfor %}
-            </ul>
-            <a href="#more" data-lity>
-                See full list of cast and crew
-            </a>
-            <ul id="more" class="lity-hide">
+        <div id="cast" class="row">
+            <h1>Cast</h1>
+            <ul id="cast">
                 {% for cast in site.data.data %}
                 <li><span class="member">{{ cast.position }}</span> <span
                         class="character">{{ cast.name }}</span>
                 </li>
                 {% endfor %}
             </ul>
+            <span id="more">
+                See full list of cast and crew
+            </span>
+        </div>
+        <div id="crew" class="row">
+            <h1>Crew</h1>
+            <ul id="cast">
+                {% for cast in site.data.data %}
+                <li><span class="member">{{ cast.position }}</span> <span
+                        class="character">{{ cast.name }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+            <span id="more">
+                See full list of cast and crew
+            </span>
         </div>
     </div>
 </section>
