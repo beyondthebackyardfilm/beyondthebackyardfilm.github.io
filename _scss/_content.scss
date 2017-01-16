@@ -753,14 +753,13 @@ body {
   }
 
   #section7 {
-    height: 50vh;
+    height: 75vh;
     position: relative;
-    //background: url('https://s3.amazonaws.com/ijadams/btb/footer.jpg') no-repeat;
-    background: black;
+    background: url('https://s3.amazonaws.com/ijadams/btb/branch-footer.jpg') no-repeat;
     background-size: cover;
-    background-position: 50% 80px;
+    background-position: bottom;
     @media screen and (min-width: 64rem) {
-      background-position: 50% 175px;
+      background-position: 50% 100px;
     }
     .top {
       color: #fff;
@@ -769,11 +768,12 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: 8rem;
+      margin-top: 4rem;
       a {color: white;}
       .row {
         max-width: 50%;
         color: white;
+        padding-bottom: 4rem;
         text-align: center;
         @media screen and (max-width: 64rem) {
           max-width: 100%;
