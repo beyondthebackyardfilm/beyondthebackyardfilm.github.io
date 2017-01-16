@@ -4,7 +4,6 @@
   "description": "A static site for BTB film.",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ian Adams",
   "license": "ISC",

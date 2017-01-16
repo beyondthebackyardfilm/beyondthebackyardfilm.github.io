@@ -17,7 +17,7 @@
  },
  {
    "position": "Tom Greco",
-   "name": "1st AC"
+   "name": "1st Assistant Camera"
  },
  {
    "position": "Tanner Carlson",
@@ -28,8 +28,8 @@
    "name": "Electric"
  },
  {
-   "position": "Jesse Pultizer",
-   "name": "Kennedy Best Boy Grip"
+   "position": "Jesse Pultizer Kennedy",
+   "name": "Best Boy Grip"
  },
  {
    "position": "Nolan Jenkins",
@@ -37,15 +37,11 @@
  },
  {
    "position": "Alex Levine",
-   "name": "Art PA"
+   "name": "Art Production Assistant"
  },
  {
    "position": "Bill James",
    "name": "Florist "
- },
- {
-   "position": "Benjamin",
-   "name": "Jon Art PA"
  },
  {
    "position": "Alexander Cole Gottlieb",
@@ -61,11 +57,11 @@
  },
  {
    "position": "Leigh Fitzjames",
-   "name": "Key Set PA"
+   "name": "Key Set Production Assistant"
  },
  {
    "position": "Oliver Finley",
-   "name": "Set PA"
+   "name": "Set Production Assistant"
  },
  {
    "position": "Mandy Burnsworth",
@@ -76,28 +72,24 @@
    "name": "Set Videographer"
  },
  {
-   "position": "Kim Robson",
-   "name": "Production Coordinator/Catering/ Events"
+   "position": "Trisha Broadwater",
+   "name": "Location Manager"
  },
  {
-   "position": "Pete Centrella",
-   "name": "Transportation Captain"
- },
- {
-   "position": "John O'Keefe",
+   "position": " Jason Centrella",
    "name": "Driver"
  },
  {
-   "position": "Cosmo Centrella",
+   "position": "Thomas Quinn",
    "name": "Driver"
  },
  {
-   "position": "Mark MackSkimming",
-   "name": "Hot Air Balloon Pilot #2"
+   "position": "Richard Hughes",
+   "name": "Hot Air Balloon Pilot #1"
  },
  {
-   "position": "Mandy Burnsworth",
-   "name": "Carousel Operator"
+   "position": "Vicki Ostrowski",
+   "name": "On Set Medic"
  },
  {
    "position": "Dan Lewis",
@@ -108,11 +100,7 @@
    "name": "Cameron Vokey"
  },
  {
-   "position": "Jon Flores",
-   "name": "Sound Designer"
- },
- {
-   "position": "Mauricio Vargas",
-   "name": "Credits Designer"
+   "position": "Jim Papoulis",
+   "name": "Composer"
  }
 ]

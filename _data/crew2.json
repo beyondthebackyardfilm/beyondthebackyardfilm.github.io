@@ -1,7 +1,7 @@
 [
  {
-   "position": "Maggie Hardy",
-   "name": "Magerko Executive Producer"
+   "position": "Maggie Hardy Magerko",
+   "name": "Executive Producer"
  },
  {
    "position": "Kaitlyn Mae Jones",
@@ -17,19 +17,19 @@
  },
  {
    "position": "Isabella Parisot",
-   "name": "2nd AC "
+   "name": "2nd Assistant Camera"
  },
  {
    "position": "Hunter Fairstone",
-   "name": "DIT "
+   "name": "Digital Imaging Technician"
  },
  {
    "position": "Stephen Ohocinski",
-   "name": "Key Grip "
+   "name": "Key Grip"
  },
  {
    "position": "Andre Bonk",
-   "name": "Grip "
+   "name": "Grip"
  },
  {
    "position": "Bianca Valle",
@@ -37,15 +37,11 @@
  },
  {
    "position": "Benjamin Jon",
-   "name": "Art PA"
+   "name": "Art Production Assistant"
  },
  {
    "position": "Steve Neubauer",
-   "name": "Florist "
- },
- {
-   "position": "Benjamin Jon",
-   "name": "Art PA"
+   "name": "Florist"
  },
  {
    "position": "Jackson Wiederhoft",
@@ -53,11 +49,7 @@
  },
  {
    "position": "Madeline Porterfield",
-   "name": "Costume Design Assistant/PA "
- },
- {
-   "position": " ",
-   "name": ""
+   "name": "Costume Design Asst/Production Asst"
  },
  {
    "position": "Heather Cole",
@@ -65,54 +57,50 @@
  },
  {
    "position": "Arthur Kay Singleton",
-   "name": "Set PA"
+   "name": "Set Production Assistant"
  },
  {
-   "position": "Marty Mundy Casting",
-   "name": "Director/Coordinator "
+   "position": "Marty Mundy",
+   "name": "Casting Director/Coordinator "
  },
  {
-   "position": "Didi Sea Set",
-   "name": "Photographer"
+   "position": "Didi Sea",
+   "name": "Set Photographer"
  },
  {
-   "position": "Benjamin Jon",
-   "name": "Art PA"
+   "position": "Kim Robson",
+   "name": "Production Coordinator/Catering/Events"
  },
  {
-   "position": "Trisha Broadwater",
-   "name": "Location Manager"
+   "position": "Pete Centrella",
+   "name": "Transportation Captain"
  },
  {
-   "position": " Jason Centrella",
+   "position": "John O'Keefe",
    "name": "Driver"
  },
  {
-   "position": "Thomas Quinn",
+   "position": "Cosmo Centrella",
    "name": "Driver"
  },
  {
-   "position": "Richard Hughes",
-   "name": "Hot Air Balloon Pilot #1"
+   "position": "Mark MackSkimming",
+   "name": "Hot Air Balloon Pilot #2"
  },
  {
-   "position": "Vicki Ostrowski",
-   "name": "On Set Medic"
- },
- {
-   "position": "Dan Lewis",
-   "name": "On Set Security "
+   "position": "Mandy Burnsworth",
+   "name": "Carousel Operator"
  },
  {
    "position": "Hunter Fairstone",
    "name": "Colorist"
  },
  {
-   "position": "Benjamin Jon",
-   "name": "Art PA"
+   "position": "Jon Flores",
+   "name": "Sound Designer"
  },
  {
-   "position": "Jim Papoulis",
-   "name": "Composer"
+   "position": "Mauricio Vargas",
+   "name": "Credits Designer"
  }
 ]
