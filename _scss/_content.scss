@@ -4,6 +4,7 @@ body {
   p {
     display: block;
     overflow: auto;
+    line-height: 2rem;
   }
   a {
     &:focus, &:active {
@@ -123,6 +124,7 @@ body {
     #logo {
       align-self: flex-start;
       img {
+        margin-top: 2rem;
         width: auto;
         max-height: 75vh;
         max-width: 100%;
@@ -215,7 +217,7 @@ body {
         }
       }
       @media screen and (max-width: 40rem) {
-        background-position: 70% 50%;
+        background-position: 80% 50%;
       }
     }
     .bottom {
@@ -275,7 +277,7 @@ body {
         background-position: center;
       }
       @media screen and (max-width: 40rem) {
-        background-position: 40% 50%;
+        background-position: 55% 50%;
       }
       img {
         left: 47%;
