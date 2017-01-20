@@ -14,8 +14,8 @@ $(document).ready(function () {
 
             var elementOffset2t = $('#section2 .top').offset().top;
             var elementOffset3t = $('#section3 .top').offset().top;
-            var elementOffset4t = $('#section4 .top').offset().top;
-            var elementOffset5t = $('#section5 .top').offset().top;
+            var elementOffset4t = $('#section4 .bottom').offset().top;
+            var elementOffset5t = $('#section5 .bottom').offset().top;
 
             var oVal2 = (elementOffset2 - scrollTop) / 30;
             var oVal3 = (elementOffset3 - scrollTop) / 30;
@@ -25,11 +25,11 @@ $(document).ready(function () {
 
             //var oVal2t = (elementOffset2t - scrollTop) / 30;
             var oVal3t = (elementOffset3t - scrollTop) / 30;
-            var oVal4t = (elementOffset4t - scrollTop) / 30;
-            var oVal5t = (elementOffset5t - scrollTop) / 30;
+            var oVal4t = (elementOffset4t - scrollTop - 200) / 30;
+            var oVal5t = (elementOffset5t - scrollTop - 300) / 30;
 
             //section2
-            $('#section2 .top h1').css({
+            $('#section2 .bottom h1').css({
                 'filter': 'blur(' + oVal2 + 'px)',
                 '-webkit-filter': 'blur(' + oVal2 + 'px)',
                 '-moz-filter': 'blur(' + oVal2 + 'px)',
