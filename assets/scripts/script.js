@@ -116,8 +116,14 @@ $(document).ready(function () {
 
 
         });
+    };
+
+
+    if ($(window).width() > 1500) {
+        $('#section3 .parallax img').attr('src','https://s3.amazonaws.com/ijadams/btb/sky-bg-big.jpg');
+        $('#section4 .parallax img').attr('src','https://s3.amazonaws.com/ijadams/btb/section4-bg-big.jpg');
+        $('#section5 .parallax img').attr('src','https://s3.amazonaws.com/ijadams/btb/section5-bg-big.jpg');
     }
-    ;
 
 
     $('#cast li:gt(15)').hide();

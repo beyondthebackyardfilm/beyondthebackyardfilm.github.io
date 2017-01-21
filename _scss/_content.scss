@@ -57,6 +57,11 @@ body {
   @media screen and (min-width: 64rem) {
     section {min-height: 700px;}
   }
+  @media screen and (min-width: 1300px) {
+    h1 {
+      font-size: 6rem;
+    }
+  }
   #section1 {
     background: url('https://s3.amazonaws.com/ijadams/btb/section1-bg.jpg') no-repeat;
     background-size: cover;
@@ -82,6 +87,12 @@ body {
       background: linear-gradient(rgba(0, 0, 0, 1), transparent);
       min-height: 150px;
       left: 0;
+      @media screen and (min-width: 1450px) {
+        min-height: 50%;
+      }
+      @media screen and (max-width: 64rem) {
+        min-height: 50%;
+      }
       ul {
         margin-top: 2rem;
         li {
@@ -113,10 +124,29 @@ body {
       img {
         margin-top: 2rem;
         width: auto;
-        max-height: 75vh;
-        max-width: 100%;
-        @media screen and (max-width: 64rem) {
-          max-height: 66vh;
+        height: 75vh;
+        max-width: 750px;
+      }
+      @media screen and (min-width: 1450px) {
+        img {margin-top: 0;}
+        align-self: inherit;
+      }
+      @media screen and (max-width: 64rem) {
+        text-align: center;
+        align-self: inherit;
+        img {
+          margin-top: 0;
+          height: auto;
+          width: 60%;
+        }
+      }
+      @media screen and (max-width: 40rem) {
+        text-align: center;
+        align-self: inherit;
+        img {
+          margin-top: 0;
+          height: auto;
+          width: 80%;
         }
       }
     }
@@ -129,10 +159,13 @@ body {
       left: 0;
       text-align: center;
       img {
-        max-width: 300px;
+        max-width: 250px;
         margin-bottom: 1rem;
         transition: 0.2s ease-in;
         opacity: 0.8;
+        @media ascreen and (min-width: 1450px) {
+          max-width: 350px;
+        }
         @media screen and (max-width: 64rem) {
           max-width: 200px;
         }
@@ -145,14 +178,11 @@ body {
   }
 
   #section2 {
-    height: 700px;
+    height: auto;
     min-height: 450px;
     position: relative;
     background: black;
     z-index: 0;
-    @media screen and (min-width: 1200px) {
-        height: 100vh;
-    }
     .grass-boy {
       position: absolute;
       top: 0;
@@ -302,7 +332,8 @@ body {
       width: 100%;
       text-align: center;
       img {
-        max-height: 45vh;
+        height: 45vh;
+        max-width: 740px;
       }
       @media screen and (max-width: 64rem) {
         display: none;
@@ -320,9 +351,6 @@ body {
       }
       @media screen and (max-width: 40rem) {
         background-position: 55% 50%;
-      }
-      img {
-        left: 47%;
       }
       h1 {
         z-index: 1;
