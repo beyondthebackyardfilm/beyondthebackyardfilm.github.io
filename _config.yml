@@ -18,3 +18,5 @@ gems:
     - jekyll-minifier
 jekyll-minifier:
   exclude: ["assets/css/*.css","*.min.*"]
+
+theme: jekyll-theme-cayman
